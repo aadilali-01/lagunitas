@@ -1,0 +1,700 @@
+@font-face {
+    font-family: abadi;
+    src: url(./abadimtcondensed-webfont.ttf);
+}
+
+@font-face {
+    font-family: Yank;
+    src: url(./yank-webfont.ttf);
+}
+
+@font-face {
+    font-family: Druk;
+    src: url(./Druk-Heavy.ttf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    position: relative;
+}
+
+
+#bottle1 {
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 99;
+    height: 44vw;
+}
+
+
+#top-nav{
+    z-index: 999;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+}
+
+#top-nav img{
+    margin-left: 80px;
+}
+
+
+#top-nav button{
+    padding: 10px 30px;
+    font-family: Druk Heavy;
+    font-size: 20px;
+    color: #fff;
+    background-color: #C8102E;
+    border: none;
+}
+
+#top-nav button:hover{
+    background-color: #940c23; 
+}
+
+#left-nav{
+    z-index: 9;
+    position: fixed;
+    width: 80px;
+    height: 100%;
+    padding-top: 20px;
+    border-right: 2px solid #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#left-nav i{
+    font-size: 20px;
+}
+
+#page1{
+    position: relative;
+   height: 100vh;
+   width: 100%;
+   background-color: #F5F2E9;
+}
+
+#page1 img{
+    position: absolute;
+    left: 25%;
+    top: -13%;
+    transform: rotate(-20deg);
+    height: 80px;
+}
+
+#page1 #center-text{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 55%;
+    text-align: center;
+    font-family:  Druk Heavy;
+    color: #C8102E;
+    font-size: 90px;
+    line-height: .8;
+}
+
+#page1 #center-text img{
+    z-index: 99;
+}
+
+#page1 #center-text h1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://lagunitas.com/wp-content/themes/lagunitas/assets/images/texture.png);
+    background-size: cover;
+}
+
+
+#page2{
+    height: 90vh;
+    width: 100%;
+    background-color: #F5F2E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page2-left{
+    margin-left: 100px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#page2-left h3{
+    font-family: Yank;
+}
+
+#page2-left p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+#page2-left button{
+    width: 80px;
+    height: 30px;
+    font-family: Druk Heavy;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+#page2-left h1{
+    font-family: Druk Heavy;
+    font-size: 100px;
+    line-height: .8;
+}
+
+#page2-right{
+    border: 2px solid #000;
+    width: 320px;
+    height: 450px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+#page2-right h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#page2-right h6{
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#page2-right #one{
+    margin-bottom: 20px;
+    height: 80px;
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page2-right #one h1{
+    font-size: 50px;
+    font-family: Druk Heavy;
+}
+
+#page2-right #one p{
+    font-size: 11px;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#page2-right #two{
+    margin-bottom: 20px;
+    height: 80px;
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page2-right #two h1{
+    font-size: 50px;
+    font-family: Druk Heavy;
+}
+
+#page2-right #two p{
+    font-size: 11px;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#page2-right #three{
+    margin-bottom: 20px;
+    height: 80px;
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page2-right #three h1{
+    font-size: 50px;
+    font-family: Druk Heavy;
+}
+
+#page2-right #three p{
+    font-size: 11px;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#page3{
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    background-color: #F5F2E9;
+}
+
+#page3 h1{
+    margin-left: 20px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 260px;
+    font-family: Druk,sans-serif;
+    color: #C8102E;
+}
+
+#page3 h1::after{
+    content: "";
+    position: absolute;
+    top: 16%;
+    left: 0;
+    background-image: url(https://lagunitas.com/wp-content/themes/lagunitas/assets/images/texture.png);
+    object-fit: cover;
+    width: 100%;
+    height: 65%;
+}
+
+#page3 #content{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    padding: 0 40px 0 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#page3 #content #video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    background-image: url(https://img.youtube.com/vi/Fm8oy37AnEQ/hqdefault.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#page3 #content #video i{
+    color: #fff;
+    background-color: #940c23;
+    border: 1px solid #000;
+    border-style: none;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+
+#page3 #content #video h3{
+    position: absolute;
+    width: 20%;
+    font-family: Yank,cursive;
+    top: 50%;
+    left: 11%;
+    line-height: 1;
+    margin-top: 5px;
+}
+
+#page3 #content #text{
+    width: 300px;
+    height: 400px;
+}
+
+#page3 #content #text p{
+    font-family: abadi;
+    font-size: 13px;
+}
+
+#page3 #content #text h3{
+    font-family: Druk;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#page3 #content #text #para2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+#page3 #content #text #para3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+#page4{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F2E9;
+}
+
+#page4 #img1{
+    top: -20%;
+    left: 10%;
+    position: relative;
+    height: 320px;
+    width: 300px;
+}
+
+#page4 #img1 img{
+    height: 300px;
+}
+
+#page4 #img1 #img1-text{
+    top: 5%;
+    left: 10%;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+#page4 #img1 #img1-text h3{
+    font-family: Druk;
+    color: #fff;
+}
+
+#page4 #img1 #img1-text h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: #fff;
+    font-size: 12px;
+    width: 60%;
+}
+
+#page4 #img1 #img1-text img{
+    height: 40px;
+}
+
+#page4 #img2{
+    top: -25%;
+    left: 25%;
+    position: relative;
+    height: 320px;
+    width: 300px;
+}
+
+#page4 #img2 img{
+    height: 300px;
+}
+
+#page4 #img2 #img2-text{
+    top: 5%;
+    left: 15%;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+#page4 #img2 #img2-text h3{
+    font-family: Druk;
+    color: #fff;
+}
+
+#page4 #img2 #img2-text h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: #fff;
+    font-size: 12px;
+    width: 60%;
+}
+
+#page4 #img2 #img2-text img{
+    height: 40px;
+}
+
+#page4 #img3{
+    top: -80%;
+    left: 68%;
+    position: relative;
+    height: 420px;
+    width: 400px;
+}
+
+#page4 #img3 img{
+    height: 380px;
+}
+
+#page4 #img3 #img3-text{
+    top: 5%;
+    left: 10%;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+#page4 #img3 #img3-text h3{
+    font-family: Druk;
+    color: #fff;
+}
+
+#page4 #img3 #img3-text h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: #fff;
+    font-size: 12px;
+    width: 60%;
+}
+
+#page4 #img3 #img3-text img{
+    height: 40px;
+}
+
+#page4>img{
+    position: absolute;
+    z-index: 3;
+    bottom: -20%;
+    left: 11%;
+    height: 350px;
+    transform: rotate(-20deg);
+}
+
+#page5{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F2E9;
+}
+
+#page5 h3{
+    font-size: 25px;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Yank;
+}
+
+#page5 h1{
+    font-size: 80px;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Druk;
+}
+
+#page5 #bottles{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 500px;
+    position: absolute;
+    top: 70%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#page5 #bottles img{
+    height: 300px;
+}
+
+#page5 #bottles .bottle-img h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+#page5 #bottles .bottle-img h4{
+    font-family: abadi;
+    font-size: 12px;
+
+}
+
+#page5 #bottles .bottle-img #mainbottle{
+    width: 210px;
+    height: 300px;
+}
+
+#page6{
+    height: 100vh;
+    width: 100%;
+    background-color: #F5F2E9;
+    display: flex;
+    gap: 30px;
+    padding: 80px 0;
+}
+
+#page6 #page6-left{
+    /* margin-top: 30px; */
+    margin-left: 120px;
+    height: 400px;
+    width: 900px;
+    background-image: url(https://lagunitas.com/wp-content/uploads/2021/07/Maximus_820x360.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#page6 #page6-right{
+    padding-top: 30px;
+    padding-left: 100px;
+    height: 400px;
+    width: 600px;
+    /* background-color: #940c23; */
+}
+
+#page6 #page6-right h5{
+    font-family: Yank;
+    margin-bottom: 10px;
+}
+
+#page6 #page6-right h1{
+    font-family: Druk;
+    font-size: 50px;
+    width: 60%;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+#page6 #page6-right p{
+    font-family: abadi;
+    font-weight: 100;
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+#page6 #page6-right button{
+    padding: 10px 20px;
+    font-family: Druk;
+    color: #fff;
+    background-color: #C8102E;
+    border-style: none;
+}
+
+#page6 #page6-right button:hover{
+    background-color: #940c23;
+}
+
+#page7{
+    position: relative;
+    background-color: #F5F2E9;
+    width: 100%;
+    height: 100vh;
+}
+
+#page7 #last{
+    /* position: relative; */
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+    width: 100%;
+    height: 90vh;
+    background-color: #000;
+    padding: 140px 50px 0px 50px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+#page7 #last img{
+    height: 150px;
+}
+
+#page7 #last::before{
+    content: "";
+    position: absolute;
+    top: -25%;
+    width: 100%;
+    height: 200px;
+    background-image: url(https://lagunitas.com/wp-content/themes/lagunitas/assets/images/footer-t.png);
+    background-size: cover;
+}
+
+#page7 #last #contact-us{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+#page7 #last #contact-us a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Druk;
+    font-size: 12vh;
+    line-height: 1;
+    transition: color ease .5s;
+}
+
+#page7 #last #contact-us a:hover{
+    color: #C8102E;
+}
+
+#page7 #last #sign-in{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#page7 #last #sign-in h4{
+    color: #fff;
+    font-family: Yank;
+}
+
+#page7 #last #sign-in input{
+    padding: 5px 30px;
+    height: 50px;
+    outline: none;
+}
+
+#page7 #last #sign-in #icons{
+    color: #fff;
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+}
+
+#page7 #last #sign-in #icons i:hover{
+    transition: all ease .5s;
+    cursor: pointer;
+    color: #C8102E;
+}
+
+#page7>h6{
+    font-family: abadi;
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    width: 25%;
+    /* text-align: center; */
+    font-weight: 100;
+    z-index: 999;
+    color: #fff;
+}
